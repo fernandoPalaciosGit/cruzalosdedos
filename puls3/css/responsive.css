@@ -43,11 +43,58 @@
 	{
 		width: 70%;
 	}
-
 }
 @media screen and (max-width: 480px){
+	header
+	{
+		height: 70px;
+	}
 	header #avatar
+	{
+		float: left;
+		margin: 2% 20% 0 5%;
+	}
+	header #logo
 	{
 		display: none;
 	}
+	header #titulo-header
+	{
+		width: 100px;
+	}
+	header #titulo-header>span
+	{
+		display: none;
+	}
+	nav#nav-desktop>ul>li:not(#flecha-nav):not(#publicar-nav)
+	{
+		display: none;
+	}
+	nav#nav-movile
+	{
+		display: block;
+		position: absolute;
+		top: 86px;
+		left: 14px;
+		z-index: 5;
+	}
+	nav#nav-movile select
+	{
+		width: 260px;
+		height: 32px;
+		text-indent: 25%;
+		text-transform: uppercase;
+	}
+	nav #publicar-nav
+	{
+		width: 70%;
+	}
+	nav #publicar-nav a
+	{
+		float: right;
+		padding: 0;
+		margin-right: 35px;
+
+	}
+
 }

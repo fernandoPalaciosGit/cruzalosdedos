@@ -122,6 +122,10 @@ nav #publicar-nav a
 {
 	padding: 0.5em 1.5em 0.5em 1.5em;
 }
+nav#nav-movile
+{
+	display: none;
+}
 footer{
 	background-color: #434343;
 	width: 100%;
