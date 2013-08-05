@@ -13,11 +13,15 @@
 		width: 25%;
 		float: right;
 		margin-right: 2%;
-		border-bottom: 1px solid grey;
+		border-bottom: 5px solid grey;
 	}
 	#bienvenida h2
 	{
 		color: #434343;
+	}
+	#bienvenida video
+	{
+		width: 100%;
 	}
 	#bienvenida #mensaje-registro,
 	#bienvenida #registro
@@ -40,4 +44,10 @@
 		width: 70%;
 	}
 
+}
+@media screen and (max-width: 480px){
+	header #avatar
+	{
+		display: none;
+	}
 }
