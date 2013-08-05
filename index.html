@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+<meta name="description" content="web dedicada al desarrolo de aplicaciones web, y publicacion de articulos academicos asociados a la informatica, ingenieria civil" />
+<meta name="author" content="Fernando palacios landi" />
+<link rel="shortcut icon" href="imagenes/favicon.ico" />
+<title>CRUZALOS</title>
+<!-- fuenntes en lazadas -->
+<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+<!--BootStrap-->
+<link rel="stylesheet" href="librerias/framework css - Bootstrap/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css" media="all, screen"/>
+<link rel="stylesheet" type="text/css" href="css/carrusel.css" media="all, screen"/>
+<!-- jQuery -->
+<script type="text/javascript" src="librerias/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="librerias/jquery.color.min.js"></script>
+<script type="text/javascript" src="javascript/carrusel.js"></script>
+<script type="text/javascript" src="javascript/reglas juego.js"></script>
+</head>
+
+<body>
+
+<section id="contenedor-ppal">
+	<!--HEADER
+	------------------------------>
+	<header id="encabezado">
+		<div id="banner">
+		</div>
+
+		<nav class="menu">
+			<ul>
+				<li><a href="puls3/index.html">A DIA DE HOY</a><span>donde todo comienza</span></li>
+				<li><a href="#">APUNTES</a><span>trabajo...trabajo...</span></li>
+				<li><a href="curriculum/index.html" rel="author" target="_blank" >CURRICULUM</a><span>de algo hay que vivir</span></li>
+				<li><a href="#">FAVORITOS</a><span>todo lo necesario</span></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<!-- MARQUESINA
+	-------------------------------->
+	<section id="carrusel" style="position:relative;">
+		<div id="marco">
+			<ul>
+				<!--imagenes de 230 x 167  -->
+			  <li>
+			  		<img width="230" height="167" alt="juego de naves" src="imagenes/naves.jpeg"/>
+			  		<a href="naves/index.html" rel="bookmark" onclick="return window.confirm(reglasNaves());">naves</a>
+			  </li>
+			  <li>
+			  		<img width="230" height="167" alt="juego astronauta" src="imagenes/astronauta.jpg"/>
+			  		<a href="astronauta/index.html" rel="bookmark" onclick="return window.confirm(reglasAstronauta());">astronauta</a>
+			  </li>
+			  <li>
+			  		<div id="mr-pancho">
+				  		<div class="ojo"></div>
+				  		<div class="ojo"></div>
+				  		<div id="bigote"></div>
+				  		<div id="boca"></div>
+					</div>
+			  		<a href="burbujas/index.html" rel="bookmark" onclick="return window.confirm(reglasBurbujas());">bubble</a>
+			  	</li>
+			  	<!-- CONSTRUCCION -->
+			  <li>
+			  		<a href="#juegoBanner" rel="bookmark" onclick="">proxima</a>
+			  </li>
+			  <li>
+			  		<a href="#juegoBanner" rel="bookmark" onclick="">proxima</a>
+			  </li>
+			</ul>
+		</div>
+		<div id="navegacion">
+			<input type="button" id="anterior" value="&laquo;"/>
+			<input type="button" id="posterior" value="&raquo;"/>
+		</div>
+		<div class="estrella12"></div>
+		<div id="juegoBanner">juegos</div>
+
+
+		<script type="text/javascript">
+			$("#marco").marquesina("#anterior", "#posterior");
+		</script>
+		<script type="text/javascript">
+			$("#navegacion").on("click", "#anterior", function(){
+				$(".estrella12").toggleClass("estrella12HOVER");
+			});
+			$("#navegacion").on("click", "#posterior", function(){
+				$(".estrella12").toggleClass("estrella12HOVER");
+			});
+		</script>
+	</section>
+
+	<!-- FOOTER
+	-------------------------------->
+	<footer id="footer">
+		<div id="autor-footer">
+			<h3>Acerca del Autor</h3>
+			<address>
+				Escrita por: <a rel="author" href="mailto:fernandopalacioslandi@gmail.com">Mail Autor</a><br />
+				Direccion Web: <a rel="author" href="http://www.cruzalosdedos.es/">Web Autor</a><br />
+				Direccion Local: <q>C/ Mateo Fiol nº68 - <abbr title="españa">ES</abbr></q>
+			</address>
+		</div>
+		<small>&copy; <a rel="licence" href="http://creativecommons.org/licenses/by/2.0/">copyleft</a> 2013</small>
+	</footer>
+</section>
+</body>
+</html>

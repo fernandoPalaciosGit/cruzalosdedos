@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+/*PREDETERMINADO
+------------------------------*/
+article,aside,section,footer,header,div,figcaption,
+figure,hgroup,nav, li{ /*resetear valores para navegadores obsoletos*/
+display:block;
+}
+html, body{
+	margin: 0px auto;
+	padding: 0px auto;
+	height: 100%;
+}
+
+/*WRAPPER*/
+#contenedor-ppal{
+width     :910px;
+height    : 100%;
+margin    : 0px auto;
+
+background-color:rgba(19, 40, 79, 0.9);
+box-shadow      :5px 5px 10px rgba(0,0,0,0.5);
+border-radius   :5px 5px 5px 5px;
+padding         :1px 25px;
+
+font-family     : "Jura", Helvetica, Arial;
+font-size       : 16px;
+color           : white;
+}
+a, a:LINK, a:VISITED, a:HOVER {
+text-decoration : none; /*renderizado*/
+}
+a:HOVER{
+border-bottom   : 1px dotted grey;
+}
+li{
+list-style-type : none; /*tipo de enumeracion, renderizado*/
+padding         : 6px 12px; /*IMP*/
+}
+h1{
+text-transform  : capitalize;
+text-align      : center;
+font-family     : "Black+Ops+One", sans-serif;
+font-size       : 50px;
+letter-spacing  : 5px;
+word-spacing    : 10px;
+}
+#contenedor-ppal section{
+	position: absolute; /*respecto el body*/
+	top: 50%; /*la situamos en el 4º cuadrante*/
+	left: 50%;
+	margin-top: -250px; /* wrapper.height/2: 250  = 125px / 2 */
+	margin-left: -455px; /* wrapper.width/2: 300 = 150px / 2 */
+}
+/*WRAPPERS*/
+.screen{
+	display: none;
+	text-align: center;
+	width     :910px;
+	background-image:url(imgs/fondo.jpg);
+	background-size: 100% 100%;
+}
+.datos{
+	display: inline-block;
+	width: 600px;
+	text-align: center;
+	vertical-align: top;
+}
+.p{
+	height: 350px;
+	display: inline-block;
+}
+img{
+	vertical-align: middle;
+}
+.btn{
+	font-family: 'Jura', sans-serif;
+	font-size: 1.5em;
+	padding: 1em 3em;
+	background-color: #f7f7f7;
+	background-color: #000028;
+	color: #f7f7f7;
+	border: none;
+	-webkit-transition:all 0.4s;
+}
+.btn:hover{
+	background-color: #f7f7f7;
+	color: #222;
+	cursor: pointer;
+}
+/*FOOTER*/
+#footer{
+	margin-top: 500px;
+}
+#autor-footer{
+	word-spacing: 5px;
+}
+#autor-footer a{
+	color: grey;
+}
+/*CANVAS*/
+#game{
+	display: none;
+	width: 900px;
+	height: 500px;
+	border: solid 5px black;
+	box-shadow: 15px 5px 30px rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+}

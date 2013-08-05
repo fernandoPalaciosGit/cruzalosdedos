@@ -1,0 +1,258 @@
+a{
+	color: #DD4F24;
+}
+body
+{
+	background-color: #EFEFEF;
+	color: #4C4C4C;
+	font-family: "PT Sans", Arial;
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+}
+header
+{
+	background-color: #434343;
+	color: white;
+	margin: 0;
+	padding: 0.5em;/*eqivaldra a 16px*/
+	/*height: 85px;*/
+}
+header  figure, header h1
+{
+	display: inline-block;
+	vertical-align: top;
+}
+header h1
+{
+	font-size: 20px;
+	font-weight: normal;
+	margin: 1em 0 0 1em;
+	width: 60%;
+}
+header #avatar
+{
+	float: right;
+	margin: 1em 0 0 0;
+}
+header #avatar figcaption
+{
+	background-color: #22BCE0;
+	float: right;
+	height: 50px;
+}
+header #avatar figcaption:after
+{
+	font-family: "icomoon";
+	content: "\e001";
+	font-size: 0.7em;
+	line-height: 50px;/*tamaño de la linea de texto*/
+	opacity: 0.5;
+}
+header #avatar img
+{
+	float: left;
+	width: 50px;
+}
+header #logo
+{
+	height: 80px;
+}
+header #logo img
+{
+	width: 80px;
+}
+nav
+{
+	background: #878787;
+	font-size: 0.9em;
+}
+nav ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 0 1.2em 0 0;
+	padding: 0.5em 0;
+	vertical-align: top;
+}
+nav ul li a
+{
+	color: white;
+	text-decoration: none;
+}
+nav ul li a:hover
+{
+	text-decoration: underline;
+}
+nav #flecha-nav
+{
+	background-color: #22BCE0;
+	padding: 0.5em 0;
+}
+nav #flecha-nav:after
+{
+	font-family: "icomoon";
+	content: "\e000";
+	opacity: 0.6;
+}
+nav #publicar-nav
+{
+	float: right;
+	margin-right: 0;
+	background-color: #DD4F24;
+	padding-right: 0.7em;
+	position: relative;
+}
+nav #publicar-nav:after
+{
+	font-family: "icomoon";
+	content: "\e003";
+	color: rgba(255,255,255,0.5);
+	position: absolute;
+	font-size: 1.8em;
+	top: 0;
+	right: 0;
+}
+nav #publicar-nav a
+{
+	padding: 0.5em 1.5em 0.5em 1.5em;
+}
+footer{
+	background-color: #434343;
+	width: 100%;
+	color: #A7A7A7;
+	text-align: center;
+	padding: 1em 0;
+}
+footer #autor-footer h2
+{
+	font-size: 1em;
+}
+#bienvenida
+{
+	display: none;
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .item
+{
+	background-color: white;
+	border-bottom: 3px #22BCE0 solid;
+	position: relative;
+	margin-bottom: 3em;
+/*	le ponemos un alto minomo igual a la imagen
+	para que el borde de la caja este siempre por encima de la imagen*/
+	min-height: 128px;
+}
+#contenido .item p
+{
+	color: #7A7A7A;
+	font-size: 0.9em;
+}
+#contenido .item .datos-item
+{
+	text-align: right;
+}
+#contenido .item .datos-item .comentarios-item
+{
+	background-color: #878787;
+	border-radius: 4px;
+	color: white;
+	margin: 0 0 0 2em;
+	padding: 3px 4px;
+	text-decoration: none;
+	/*añadirle viñeta*/
+	position: relative;
+}
+#contenido .item .datos-item .comentarios-item:after
+{
+	position: absolute;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top:  5px solid #878787;
+	content: "";
+	top: 100%;
+	left: 10px;
+}
+#contenido .item .datos-item .guardar-item
+{
+	text-decoration: none;
+	margin: 0 1em;
+}
+#contenido .item .datos-item .guardar-item:after
+{
+	color: #FD5;
+	font-family: "icomoon";
+	content: "\e004";
+}
+#contenido .item .datos-item .tag-item
+{
+	background-color: #22BCE0;
+	border-radius: 0.5em;
+	color: white;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+	float: left;
+}
+#contenido .item .imagen-item
+{
+	float: left;
+	margin: 0 1em 0 0;
+}
+#contenido .item .imagen-item img
+{
+	width: 96px;
+}
+#contenido .item .titulo-item
+{
+	font-size: 1em;
+	padding: 0.5em 0.5em 0;
+	font-style: italic;
+}
+#contenido .item .titulo-item a
+{
+	color: #444;
+	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background-color: white;
+	box-sizing: border-box;
+	margin: 3px 0 0 0;
+	position: absolute;
+	/*mismo width que la imagen, y con border-box lo ajustamos*/
+	width: 96px;
+	top: 100%;
+	padding: 0.5em 0;
+	text-align: center;
+	border-radius: 0 0 0.5em 0.5em;
+
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:before
+{
+	font-family: 'icomoon';
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+#contenido .item .votacion .down:after
+{
+	color: red;/*votacion negativa*/
+	content: "\e001";
+}
+#contenido .item .votacion .up:before
+{
+	color: green;/*votacion positiva*/
+	content: "\e002";
+}

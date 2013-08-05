@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="juego de plataformas, basado en la api de canvas para html5, javascript y librerias de terceros, preload, kinetic" />
+<meta name="author" content="Fernando palacios landi" />
+<title>juego de plataformas</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Jura:400,600" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Black+Ops+One" />
+
+</head>
+
+<body>
+
+<section id="contenedor-ppal">
+	<!-- FRAMES -->
+	<section id="info" class="screen">
+        <img src="imagenes/heroe.png" class="p">
+        <div class="datos">
+            <h1>The Astronaut</h1>
+            <button class="btn start" id="otro">Iniciar</button>
+            <p>
+                <h3>Instrucciones</h3>
+                <p>Mover personaje con flechas</p>
+                <p>Saltar flecha hacia arriba</p>
+            </p>
+        </div>
+	</section>
+	<section id="win" class="screen">
+        <img src="imagenes/heroe.png" class='p'>
+        <div class="datos">
+            <h1>¡GANASTE!</h1>
+            <button class="btn start" id="otro">Juega de nuevo</button>
+            <p>
+                <h3>Puntaje</h3>
+                <p id="score"></p>
+            </p>
+        </div>
+	</section>
+	<section id="lose" class="screen">
+        <img src="imagenes/heroe.png" class='p'>
+        <div class="datos">
+            <h1>Perdiste</h1>
+            <p>
+                <h3>Puntaje</h3>
+                <p id="score"></p>
+            </p>
+            <p>Pero puedes iniciar de nuevo</p>
+            <button class="btn start"  id="algo">Reintentar</button>
+        </div>
+	</section>
+	<!-- JUEGO -->
+	<section id="game"></section>
+
+	<!-- FOOTER
+	-------------------------------->
+	<footer id="footer">
+		<div id="autor-footer">
+			<h3>Acerca del Autor</h3>
+			<address>
+				Escrita por: <a rel="author" href="mailto:fernandopalacioslandi@gmail.com">Mail Autor</a><br/>
+				Direccion Web: <a rel="author" href="http://www.cruzalosdedos.es/">Web Autor</a><br/>
+				Direccion Local: <q>C/ Mateo Fiol nº68 - <abbr title="españa">ES</abbr></q>
+			</address>
+		</div>
+	</footer>
+	<!--preload es la libreria q usamos para cargar los 'assets'-->
+	<script type="text/javascript" src="../librerias/preloadjs-0.1.0.min.js"></script>
+	<script type="text/javascript" src="../librerias/kinetic-v4.5.4.min.js"></script>
+	<script type="text/javascript" src="javascript/heroe-sprite.js"></script>
+	<script type="text/javascript" src="javascript/heroe.js"></script>
+	<script type="text/javascript" src="javascript/enemigo.js"></script>
+	<script type="text/javascript" src="javascript/plataforma.js"></script>
+	<script type="text/javascript" src="javascript/moneda.js"></script>
+	<script type="text/javascript" src="javascript/llave.js"></script>
+	<script type="text/javascript" src="javascript/puerta.js"></script>
+	<script type="text/javascript" src="javascript/game.js"></script>
+	<!--cargamos las imagenenes en canvas, previamente a su uso en el lienzo-->
+	<!--tambien cargamos el juego-->
+	<script type="text/javascript" src="javascript/cargar-assets.js"></script>
+	<script type="text/javascript" src="javascript/main.js"></script>
+</section>
+</body>
+</html>

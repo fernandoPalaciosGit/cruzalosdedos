@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" lang="es" />
+<meta name="description" content="curriculum vitae de un programador" />
+<meta name="keywords" content="curriculum, informatica, programacion" />
+<meta name="author" content="Fernando Palacios Landi" />
+<title>Curriculum vitae</title>
+<link rel="stylesheet" type="text/css" href="css_cv.css" />
+</head>
+<body>
+	<!-- XAMPP: HTDOCS: LOCALHOST:8888/***.HTML -->
+	<div id="wrapper">
+		<header itemscope itemtype="http://schema.org/Person">
+			<div id="fotoInfo">
+				<img alt="fotografia carnet" src="fotocarnet.jpg" itemprop="image"
+					width="144px" height="190px" />
+				<hgroup>
+					<h1 itemprop="title">curriculum vitae</h1>
+					<h2 itemprop="name">fernando palaciosn landi</h2>
+				</hgroup>
+			</div>
+
+			<div id="seccionInfo">
+				<h2>informacion personal</h2>
+
+				<dl itemprop="homeLocation" itenscope itemtype="http://schema.org/PostalAddress">
+					<dt>domicilio</dt>
+					<dd>
+						<span itemprop="streetAddres"> Calle mateo fiol</span>, <span
+							itenprop="addressLocality">la vileta</span>
+					</dd>
+					<dt>poblacion</dt>
+					<dd>
+						<span itemprop="locality">Palma</span> de<span itemprop="region">mallorca</span>,
+						<acronym title="españa">ES</acronym>
+
+					</dd>
+					<dt>codigo postal</dt>
+					<dd itemprop="postalCode">07013</dd>
+					<dt>
+						<abbr title="telefono fijo">telf.</abbr>
+					</dt>
+					<dd itemprop="telephone">+34 971790012</dd>
+					<dt>
+						<abbr title="telefono movil">telf.</abbr>
+					</dt>
+					<dd itemprop="telephone">
+					<span itemprop="telephone">+34 617405035</span>
+					</dd>
+					<dt>email</dt>
+					<dd>
+						<a itemscope itemtype="http://schema.org/ContactPoint" href="mailto:fernandopalacioslandi@gmail.com">
+						<span itemprop="email">fernandopalacioslandi@gmail.com</span></a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>edad</dt>
+					<dd>27 años</dd>
+					<dt>lugar de nacimiento</dt>
+					<dd>
+						lima, <acronym title="peru">PE</acronym>
+					</dd>
+					<dt>fecha de nacimiento</dt>
+					<dd>
+						<time title="nacimiento" itemprop="birthDate">11-12-85</time>
+					</dd>
+					<dt>estado civil</dt>
+					<dd>soltero</dd>
+					<dt>nacionalidad</dt>
+					<dd itemprop="nationality">española</dd>
+					<dt>dni</dt>
+					<dd itemprop="duns">43167787F</dd>
+					<dt>seguridad social</dt>
+					<dd>071036102350T</dd>
+					<dt>permiso de conducir</dt>
+					<dd>B</dd>
+				</dl>
+			</div>
+		</header>
+
+		<div id="contenido">
+
+			<!-- IDIOMAS
+	-------------------------------->
+			<section id="idiomas" itemscope itemtype="http://schema.org/Language">
+				<h2>idiomas</h2>
+				<div class="linea"></div>
+				<dl>
+					<dt itemprop="name">español</dt>
+					<dd itemprop="description">hablado y escrito</dd>
+					<dt itemprop="name">catalan</dt>
+					<dd itemprop="description">certificado homologado nivel C</dd>
+					<dt itemprop="name">ingles</dt>
+					<dd itemprop="description">conocimientos medios orales y escritos</dd>
+				</dl>
+			</section>
+
+
+			<!-- FORMACION
+	-------------------------------->
+			<div id="estudios" itemscope
+				itemtype="http://schema.org/EducationEvent">
+				<h2>formacion academica</h2>
+				<div class="linea"></div>
+				<ul>
+					<li><span itemprop="subevent">CCCNA Exploration, <span
+							itemprop="description">curso de formación Redes</span> <span
+							itemprop="performer">IBITEC</span> – <span itemprop="location">PAR
+								BIT</span></li>
+					<li>Cursando <span itemprop="description">grado
+							superior programador web</span> <span itemprop="location">Instituto
+							Francesc de Borja Moll</span></li>
+					<li><span itemprop="duration">3 años</span> en <span
+						itemprop="description">Arquitectura Técnica</span> <span
+						itemprop="location">Universitat de les Illes Balears</span></li>
+					<li>Titulo de <span itemprop="description">Bachiller
+							Cientifico-Tecnico</span> , <span itemprop="location">Colegio
+							Virgen del Carmen</span></li>
+				</ul>
+			</div>
+
+
+			<!-- FORMACION INFORMATICA
+	-------------------------------->
+			<div id="informatica">
+				<h2>formacion informatica</h2>
+				<div class="linea"></div>
+				<ul>
+					<li>lenguajes de programacion
+						<ul itemscope itemtype="http://schema.org/Code">
+							<li >NIVEL MEDIO en Lenguajes de programación ADA: <span
+								itemprop="programmingLanguage">JAVA</span></li>
+							<li>NIVEL MEDIO en Lenguajes de programación WEB: <span
+								itemprop="programmingLanguage">HTML, CSS, JAVASCRIPT,
+									XML, SCHEMA, XSLT</span></li>
+							<li>NIVEL MEDIO en Lenguajes de programación SERVIDOR: <span
+								itemprop="programmingLanguage">SQL</span></li>
+						</ul>
+					</li>
+					<li>software escritorio
+						<ul itemscope itemtype="http://schema.org/SoftwareApplication">
+							<li ><span itemprop="applicationSuite">Microsoft Excel</span>, Nivel de Usuario</li>
+							<li ><span itemprop="applicationSuite">Microsoft Word</span>, Nivel de Usuario</li>
+							<li ><span itemprop="applicationSuite">Adobe Acrobat</span>, Nivel de Usuario</li>
+							<li><span itemprop="applicationSuite">Autocat , Nivel Básico</span></li>
+						</ul>
+					</li>
+					<li >entornos de desarrollo
+						<ul itemscope itemtype="http://schema.org/SoftwareApplication">
+							<li>IDE: <span itemprop="applicationSuite">eclipse</span></li>
+							<li>diagramas diseño: <span itemprop="applicationSuite">argo UML</span></li>
+							<li>cliente - servidor: <span itemprop="applicationSuite">datamodeler, *isql_plus, xammp,
+								phpmyadmin</span></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+
+
+			<!-- EXPERIENCIA
+	-------------------------------->
+			<section id="experiencia">
+				<h2>experiencias profesionales</h2>
+				<div class="linea"></div>
+
+				<article id="art1" itemscope itemtype="http://schema.org/Person">
+					<h3 itemprop="jobTitle">practicante tecnico de redes</h3>
+					<dl>
+						<dt>empresa</dt>
+						<dd itemprop="workfor">
+							<em>jaime aguilo</em>
+						</dd>
+						<dt>direccion</dt>
+						<dd itemprop="workLocation" itemscope itemtype="http://schema.org/Organization">
+							<span itemprop="address">calle cami nou, 9</span>, <abbr title="poligono">Pol.</abbr> industrial
+							Son Fuster
+						</dd>
+					</dl>
+					<ul>
+						<li itemprop="knows">instalacion de redes en empresas con multiples sucursales</li>
+						<li itemprop="knows">asistencias tematica de SO</li>
+						<li itemprop="knows">instalacion de software y reparacion de equipos</li>
+					</ul>
+					<time datetime="2009-08-01">Agosto y Septiembre 2009</time>
+				</article>
+
+				<article id="art2" itemscope itemtype="http://schema.org/Person">
+					<h3 itemprop="jobTitle">becario de ingeniero de la edificacion</h3>
+					<dl>
+						<dt>empresa</dt>
+						<dd>
+							gabinete tecnico de contruccion, <em><span itemprop="workfor">Kuln &amp; Partner S.A</span></em>
+						</dd>
+						<dt>direccion</dt>
+						<dd itemprop="workLocation" itemscope itemtype="http://schema.org/Organization">
+						<span itemprop="address">pueblo español S/N</span></dd>
+					</dl>
+					<ul>
+						<li itemprop="knows">cubicaciones, tasaciones y replanteos de unidades de obra</li>
+						<li itemprop="knows">redaccion de legislacion aplicada a la construccion de
+							obras privadas</li>
+						<li itemprop="knows">desarrollo estructural de porticos</li>
+						<li itemprop="knows">diseño de unidades de contencion en trerenos</li>
+					</ul>
+					<time datetime="2008-07-01">Julio a Septiembre 2008</time>
+				</article>
+
+				<article id="art3" itemscope itemtype="http://schema.org/Person">
+					<h3 itemprop="knows">sector hosteleria, departamento de bares</h3>
+					<dl>
+						<dt>empresa</dt>
+						<dd>
+							<span itemprop="workfor">Iberostar, <em>hotel playa de Muro</em></span>, alcudia
+						</dd>
+						<dt>direccion</dt>
+						<dd itemprop="workLocation" itemscope itemtype="http://schema.org/Organization">
+						Calle <span itemprop="address">Albufera, 30, puerto de Alcudia</span></dd>
+					</dl>
+					<ul>
+						<li itemprop="jobTitle">ayudante camarero</li>
+					</ul>
+					<time datetime="2005-07-01">Julio a Septiembre 2005</time>
+				</article>
+
+				<article id="art4" itemscope itemtype="http://schema.org/Person">
+					<h3 itemprop="Knows">sector hosteleria, departamento de bares</h3>
+					<dl>
+						<dt>empresa</dt>
+						<dd>
+							<span itemprop="workfor">Iberostar, <em>hotel Village</em></span>, alcudia
+						</dd>
+						<dt>direccion</dt>
+						<dd itemprop="workLocation" itemscope itemtype="http://schema.org/Organization">
+						<span itemprop="address">Calle Albufera, 6, puerto de Alcudia</span></dd>
+					</dl>
+					<ul>
+						<li itemprop="jobTitle">ayudante camarero</li>
+					</ul>
+					<time datetime="2004-07-01">Julio a Septiembre 2004</time>
+				</article>
+
+				<article id="art5" itemscope itemtype="http://schema.org/Person">
+					<h3 itemprop="knows">sector hosteleria, departamento de bares, departamento administracion</h3>
+					<dl>
+						<dt>empresa</dt>
+						<dd>
+							<span itemprop="workfor">Roc, <em>hotel illetas playa</em></span>, illetas
+						</dd>
+						<dt>direccion</dt>
+						<dd  itemprop="workLocation" itemscope itemtype="http://schema.org/Organization">
+						<span itemprop="address">paseo de illetas, 62, calvia</span></dd>
+					</dl>
+					<ul>
+						<li itemprop="jobTitle">ayudante camarero</li>
+						<li itemprop="jobTitle">conserje</li>
+						<li itemprop="jobTitle">fajin, botones</li>
+						<li itemprop="jobTitle">recepcionista</li>
+						<li itemprop="jobTitle">ayudante de camarero</li>
+						<li itemprop="jobTitle">cocina</li>
+					</ul>
+					<time datetime="2006-07-01">Julio a Septiembre 2006</time>
+				</article>
+			</section>
+			<!-- fin de experiencias -->
+
+		</div>
+		<!-- fin de contenido -->
+
+
+		<footer>
+			<h2>informacion adicional</h2>
+			<div class="linea"></div>
+
+			<div id="referencias">
+				<h3>referencias</h3>
+				<dl itemscope itemtype="http://schema.org/Person">
+					<dt itemprop="colleague">Manuel Sanchez</dt>
+					<dd><span itemprop="jobTitle">director</span> de <span itemprop="contactPoint">Roc illetas playa, Roc Portonova</span></dd>
+					<dt itemprop="colleague">Juan Ramon Guerrero</dt>
+					<dd><span itemprop="jobTitle">arquitecto tecnico </span> de <span itemprop="contactPoint">Kuln &amp; Partner</span></dd>
+					<dt itemprop="colleague">Fernando Palcios Velarde</dt>
+					<dd><span itemprop="jobTitle">ingeniero de caminos</span> del <span itemprop="contactPoint">ministerio medio ambiente</span>, email:
+					<span itemscope="http://schema.org/ContactPoint" itemprop="email">fpal@telefonica.net</span></dd>
+					<dt itemprop="colleague">Jaime aguilo</dt>
+					<dd><span itemprop="jobTitle">ingeniero redes</span> <span itemprop="contactPoint">Jaime Aguilo S.A</span></dd>
+				</dl>
+			</div>
+
+			<p>
+				Palma de Mallorca
+				<time datetime="2013-02-01" pubdate="pubdate">Febrero 2013</time>
+			</p>
+		</footer>
+
+	</div>
+	<!-- fin de wrapper -->
+
+</body>
+</html>

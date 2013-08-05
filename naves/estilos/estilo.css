@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+/*PREDETERMINADO
+------------------------------*/
+article,aside,section,footer,header,div,figcaption,
+figure,hgroup,nav, li{ /*resetear valores para navegadores obsoletos*/
+    display:block;
+}
+html, body{
+	margin: 0 auto;
+	padding: 0 auto;
+	height: 100%;
+}
+body{
+	cursor: auto;
+	background: black url(../imagenes/estrellas.gif) no-repeat center center fixed;
+	background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+/*WRAPPER*/
+#contenedor-ppal{
+	width           :900px;
+	height          : 100%;
+	margin          : 0 auto;
+	/*margin-top    :50px;
+	margin-bottom   :50px;*/
+
+	background-color: rgba(19, 40, 79, 0.9);
+	box-shadow      : 15px 5px 30px rgba(255, 255, 255, 0.5);
+	border-radius   : 5px 5px 5px 5px;
+	padding         : 1px 25px 0px 25px;
+
+	font-family     : "Jura", Helvetica, Arial;
+	font-size       : 16px;
+	color           : white;
+}
+
+a, a:LINK, a:VISITED, a:HOVER {
+	text-decoration: none; /*renderizado*/
+}
+
+a:HOVER{
+	border-bottom: 1px dotted grey;
+}
+
+li{
+	list-style-type: none; /*tipo de enumeracion, renderizado*/
+	padding: 6px 12px; /*IMP*/
+}
+
+
+/*SECCION DE CANVAS*/
+#juego-naves{
+	width: 810px;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+#juego-naves>h2{
+	text-transform: capitalize;
+	text-align    : center;
+	font-family     : "Black+Ops+One", sans-serif;
+	font-size     : 50px;
+	letter-spacing: 5px;
+	word-spacing  : 10px;
+}
+#canvas-naves{
+	border: solid 5px black;
+	box-shadow: 15px 5px 30px rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+}
+#footer{
+	margin-top: 50px;
+}
+#autor-footer{
+	word-spacing: 5px;
+}
+#autor-footer a{
+	color: grey;
+}

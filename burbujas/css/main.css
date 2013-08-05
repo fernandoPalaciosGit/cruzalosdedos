@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+/*PREDETERMINADO
+------------------------------*/
+article,aside,section,footer,header,div,figcaption,
+figure,hgroup,nav, li{ /*resetear valores para navegadores obsoletos*/
+    display:block;
+}
+
+body{
+	margin:0px auto;
+	padding: 0px auto;
+	cursor: auto;
+}
+
+/*WRAPPER*/
+#contenedor-ppal{
+	width:900px;/*RESPONSIVE DESIGN*/
+	margin: 0px auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	padding:50px 25px;
+
+	background-color: #4ae9b8;
+	box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+	border-radius:5px 5px 5px 5px;
+
+	font-family: Helvetica, Arial;
+	font-size: 16px;
+	color: white;
+}
+
+a, a:LINK, a:VISITED, a:HOVER {
+	text-decoration: none; /*renderizado*/
+}
+
+a:HOVER{
+	border-bottom: 1px dotted black;
+}
+
+li{
+	display:inline-block;
+	width: 200px;
+	margin: 0px auto;
+	padding: 6px 12px;
+	text-align: center;
+	list-style-type: none; /*tipo de enumeracion, renderizado*/
+}

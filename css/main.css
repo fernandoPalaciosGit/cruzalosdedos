@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+/*PREDETERMINADO
+------------------------------*/
+@font-face{
+	src: url("../fuentes/MyriadPro-Regular.otf") format("truetype");
+	font-family: "MyriadPro";
+}
+article,aside,section,footer,header,div,figcaption,
+figure,hgroup,nav, li{ /*resetear valores para navegadores obsoletos*/
+    display:block;
+}
+
+body{
+	margin:0px auto;
+	padding: 0px auto;
+	cursor: auto;
+	letter-spacing: 2px;
+	background-color: rgba(19, 40, 79, 0.9);
+}
+
+section #carrusel{
+	width: 650px;
+	margin: 50px auto;
+	top: 50px;
+}
+
+/*WRAPPER*/
+#contenedor-ppal{
+	width:1000px;/*RESPONSIVE DESIGN*/
+	margin: 0px auto;
+	margin-top:25px;
+	margin-bottom:50px;
+
+	background-color: rgba(19, 40, 79, 1.0);
+	border-radius:5px 5px 5px 5px;
+	padding:25px 25px;
+
+	font-family: "MyriadPro";
+	font-size: 15px;
+	color: white;
+}
+
+#footer{
+	margin-top: 130px;
+}
+#footer a, #footer a:LINK, #footer a:VISITED, #footer a:HOVER {
+	color: silver;
+	text-decoration: none; /*renderizado*/
+}
+
+#footer a:HOVER{
+	opacity:0.5;
+	border-bottom: 1px dotted white;
+}
+
+li{
+	list-style-type: none; /*tipo de enumeracion, renderizado*/
+}
+
+/*CARRUSEL*/
+
+
+/*ENCABEZADO*/
+#banner{/*dimensiones del banner*/
+	width: 962px;
+	height: 575px;
+	margin: 0px auto;
+	padding: 0px auto;
+	background-image: url("../imagenes/banner.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	box-shadow: 20px 20px 10px rgba(1, 1, 1, 0.2);
+}
+.menu{
+	font-size: 15pt;
+	border-bottom: solid 4px #0ca9e4;
+	background-color: rgba( 255, 255, 255, 0.7);
+	margin-top: -138px;
+}
+.menu ul{
+	margin: 0px auto;
+	margin-left: 95px;
+	padding: 0px;
+}
+.menu ul li{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 5px;
+
+	height: 129px;
+	width: 200px;
+}
+.menu ul li:hover{
+	background-color: #0ca9e4;
+	color: white;
+    text-decoration: none;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.menu a{
+	display: block;
+	padding-top: 50px;
+	color: black;
+	text-decoration: none;
+}
+.menu span{
+	display: block;
+	font-size: 8pt;
+	margin-top: 5px;
+}

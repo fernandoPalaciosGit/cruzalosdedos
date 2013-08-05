@@ -1,0 +1,281 @@
+	@CHARSET "UTF-8";
+	/*MARCOS DE NAVEGACION*/
+	#marco{
+	width: 464px;/*entraran dos imagenes y sus bordes de 1px*/
+	margin: 0px auto;
+	/*TODO LO QUE NO ESTE DENTRO DEL MARCO, NO SE VEA*/
+	overflow: hidden;
+
+	border: 10px solid white;
+	border-radius: 4px;
+	box-shadow:01px 0px 25px 5px rgba(0,0,0,0.3);
+
+	position : relative;
+	z-index:5;/*solo funciona con posicion relativa*/
+
+	}
+	#marco ul{
+	/* >li*5 */
+	width: 1200px;
+	/*ANULAMOS LOS VALORES PREDETERMINADOS DE LISTAS: margin, padding*/
+	padding: 0px;
+	margin: 0px;
+
+	/*JAVASCRIPT: para que modifiquemos posicion left/rigth, debe tener una posicion relativa*/
+	position: relative;
+	}
+	#marco li{
+	/*ancho predeterminado para nuestras imagenes*/
+	display: !important;
+	text-align:center;
+	word-spacing: 10px;
+	font-size: xx-large;
+
+	width: 230px;
+	height:167px;
+	list-style: none;
+	border: 1px solid rgba(19, 40, 79, 0.5);
+	background-color: #F8EEB9;
+
+	position: relative;/*cada imagenen se posiciona segun la posicion de su propio contenedor*/
+	float:left;
+	}
+
+
+	/*HIPERENLACES A JUEGOS*/
+	#marco>ul>li>a{
+		position: absolute;
+		top: 135px;
+		letter-spacing: 5px;
+		color:red;
+		font-family: "Press Start 2P", fantasy;
+		font-size: 15px;
+		text-transform: capitalize;
+		text-decoration:  none;
+		opacity: 0.6;
+	}
+	 /*las 2 primeras se repiten en las dos ultimas por el javascript del carrusel/main.js*/
+	#marco>ul>li:nth-child(1)>a, #marco>ul>li:nth-child(6)>a{
+		left: 67px;
+	}
+	#marco>ul>li:nth-child(1)>a:HOVER, #marco>ul>li:nth-child(6)>a:HOVER{
+		left: 58px;
+	}
+	#marco>ul>li:nth-child(2)>a, #marco>ul>li:nth-child(7)>a{
+		left: 18px;
+	}
+	#marco>ul>li:nth-child(2)>a:HOVER, #marco>ul>li:nth-child(7)>a:HOVER{
+		left: 0px;
+	}
+	#marco>ul>li:nth-child(3)>a{
+		left: 61px;
+	}
+	#marco>ul>li:nth-child(3)>a:HOVER{
+		left: 51px;
+	}
+	/*PROXIMAS, hay que cambiarlas*/
+	#marco>ul>li:nth-child(4)>a{
+		top: 80px;
+		left: 44px;
+	}
+	#marco>ul>li:nth-child(4)>a:HOVER{
+		left: 32px;
+	}
+	#marco>ul>li:nth-child(5)>a{
+		top: 80px;
+		left: 44px;
+	}
+	#marco>ul>li:nth-child(5)>a:HOVER{
+		left: 32px;
+	}
+	#marco>ul>li>a:HOVER{
+		font-size: 17px;
+		font-style: italic;
+		font-weight: bold;
+		text-shadow: 1px 1px 5px #F3ECBA;
+		-moz-text-shadow: 0 0 30px #ffffff;
+		-webkit-text-shadow: 0 0 30px #ffffff;
+	}
+
+
+
+	/*BOTONES DE NAVEGACION*/
+	#navegacion{
+	width: 150px;/*button*2*/
+	margin: 0px auto;
+	margin-top: 50px;
+	}
+	#navegacion input[type="button"]{
+	float:left;
+	width: 75px;
+
+	background-color: #ededed;
+	color: #444;
+	font-size: 5em;
+	line-height: 60px;
+	padding-bottom: 10px;
+	border-radius:50%;
+	}
+	#navegacion input[type="button"]:HOVER{
+	top: -55px;
+	background-color: rgba(105,105,105, 0.6);
+	}
+	/*como tenemos la posicion relativa de los botones, podemos coordenatrlos respecto ellos mismos*/
+	#anterior, #posterior{
+	position : relative;
+	z-index:2;/*solo funciona con posicion relativa*/
+	top: -70px;
+	}
+	#anterior{
+	left: -35px;
+	}
+	#posterior{
+	right: -35px;
+	}
+
+	/*BANNER ESTRELLA*/
+	.estrella12{
+	position  : absolute;
+	height    : 80px;
+	width     : 80px;
+	left      : 28px;
+	top       : -54px;
+	background: rgba(30, 113, 168, 0.9);
+	opacity:0.4;
+	transition        : all 0.7s ease-in;
+	-webkit-transition: all 0.7s ease-in;
+	-moz-transition   : all 0.7s ease-in;
+	-o-transition     : all 0.7s ease-in;
+	}
+	.estrella12:before {
+	height: 80px;
+	width: 80px;
+	background: rgba(30, 113, 168, 0.9);
+	content:"";
+	position: absolute;
+	/* Rotate */
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);
+	}
+	.estrella12:after {
+	height: 80px;
+	width: 80px;
+	background: rgba(30, 113, 168, 0.9);
+	content:"";
+	position: absolute;
+	/* Rotate */
+	-moz-transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	}
+	.estrella12HOVER{
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	opacity: 1;
+	}
+	#juegoBanner{
+	position: absolute;
+	left      : 25px;
+	top       : -29px;
+	text-transform: uppercase;
+	font-style: oblique;
+	font-family: fantasy;
+	font-weight: 200;
+	font-variant: small-caps;
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: rgb(245, 57, 57);
+	transform        : rotate(-30deg);
+	-moz-transform   : rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	-ms-transform    : rotate(-30deg);
+	-o-transform     : rotate(-30deg);
+	text-shadow: 0 0 30px #ffffff;
+	-moz-text-shadow: 0 0 30px #ffffff;
+	-webkit-text-shadow: 0 0 30px #ffffff;
+	}
+
+	/*BANNER HUEVO*/
+	#mr-pancho{
+		width: 70px;
+		height: 70px;
+		margin: 0px auto;
+		position: relative;
+		bottom: -65px;
+		background-color: #4ae9b8;
+		border-radius: 85% 85% 50% 50%/ 100% 100% 50% 50%;
+		animation: anim .5s infinite alternate;
+		-moz-animation: anim .5s infinite alternate;			/*Firefox*/
+		-webkit-animation: anim .5s infinite alternate; 	/*Safari y Chrome*/
+		-o-animation: anim .5s infinite alternate;			/*Opera*/
+		-khtml-animation: anim .5s infinite alternate; 		/*Konkeror*/
+		-ms-animation: anim .5s infinite alternate;			/*Explorer*/
+		-chromeanimation: anim .5s infinite alternate;		/*Chrome*/
+	}
+	@keyframes anim{
+		to{
+			border-radius: 50%;
+			bottom: 0.1em;
+		}
+	}
+	@-webkit-keyframes anim{
+		to{
+			border-radius: 50% 50% 85% 85%/ 50% 50% 100% 100%;
+			bottom: 0.01em;
+		}
+	}
+	@-moz-keyframes anim{
+		to{
+			border-radius: 50%;
+			bottom: 0.1em;
+		}
+	}
+	.ojo{
+		display: inline-block;
+		position: relative;
+		left: -6px;
+		width: 8px;
+		height: 12px;
+		margin: 0px 0px -10px;
+		background-color: rgba(0,0,0,.9);
+		border-radius: 50%;
+		padding: 0;
+	}
+	#bigote{
+		display: inline-block;
+		width: 100%;
+		height: 10px;
+		margin: 0px;
+		padding: 0px;
+	}
+	#bigote:before{
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+	#bigote:before, #bigote:after{
+		display: inline-block;
+		text-align: center;
+		color: rgba(0,0,0,0.9);
+		content: "~";
+		line-height: 0;
+		font: 1.5em/20px "Helvetica", Arial;
+		margin: 0 -3px;
+	}
+	#boca{
+		height: 10px;
+		border-radius: 50% 50% 20px 20px;
+		width: 48%;
+		margin: 5px auto 0px;
+		padding: 0px;
+		background: black;
+		border: 3px solid rgb(140, 172, 14);
+	}

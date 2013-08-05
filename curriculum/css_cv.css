@@ -1,0 +1,190 @@
+@CHARSET "UTF-8";
+
+/*PREDETERMINADO
+------------------------------*/
+/*cfuente h2: Copperplate Gothic Light*/
+@font-face{
+	font-family: "gothic";
+	src: url("../fuentes/Copperplate.ttf") format("truetype");
+}
+body{
+margin:0px auto;
+padding: 0px auto;
+position:relative;
+cursor: auto;
+}
+
+
+.linea{
+  height: 1px;
+  width: 90%;
+  margin: 0px auto 30px auto;
+  
+  border: 0;
+  border-top: 1px solid black;   
+}
+
+
+a, a:LINK, a:VISITED, a:HOVER {
+	text-decoration: none; /*renderizado*/
+	display:block;
+}
+
+a:HOVER{
+	border-bottom: 1px dotted black;
+}
+
+li{
+display: block;	/*block: nos aseguramos de que de q el elemento este activo*/
+list-style-type: none; /*tipo de enumeracion, renderizado*/
+padding: 6px 12px; /*IMP*/
+}
+
+
+/*POSICIONAR HORIZONTALMENTE
+------------------------------*/
+
+
+#wrapper {
+	
+	width: 1100px; /*diseño fijo*/
+	margin: 0px auto; /*alineamos horizontalmente*/
+	margin-top: 50px; 
+	
+	/*background-color: orange;*/
+}
+
+header, footer, #contenido{
+	width: 1000px;
+}
+#seccionInfo, #fotoInfo{
+	position:relative;
+	/*background-color: orange;*/
+	width: 700px;
+	left:150px;
+}
+
+
+/*TIPOGRAFIA DE FUENTES
+------------------------------*/
+h1{
+	text-decoration: underline ;
+	font-family: fantasy ;
+	letter-spacing:3px;
+	word-spacing:10px;
+	font-weight: lighter;
+	font-style: oblique; 
+}
+
+h2{
+	word-spacing:10px;
+text-transform: uppercase;
+text-indent: 50px;
+font-family: "gothic";
+
+}
+
+.seudo_h3, h3, dt{
+text-transform: capitalize;
+font-weight: bolder;
+margin-top: 10px;
+
+}
+dd:first-letter,  li:first-letter{
+text-transform: capitalize;
+}
+dd{
+line-height: 1.5;
+}
+
+/*LAYOUT
+------------------------------*/
+#fotoInfo hgroup{
+	padding-left: 50px;
+	padding-top: 20px;
+}
+img{
+	display: block;
+}
+
+#fotoInfo, #fotoInfo img, #fotoInfo hgroup{
+	float:left;
+}
+
+#seccionInfo{
+	clear: left;
+}
+
+#seccionInfo, #seccionInfo dl{
+float:left;
+}
+header{
+	float: left;
+}
+#contenido{
+	
+	clear:left;	
+}
+
+#contenido{
+	float:left;
+}
+#experiencia, #experiencia #art3, #experiencia #art5, footer{
+	clear: left;
+}
+#idiomas, #estudios, #informatica, #experiencia, #seccionInfo, #fotoInfo{
+	margin-top: 50px;
+}
+article{
+	padding-top: 50px;
+}
+/*diseño contenedores de contenedores*/
+header{
+	margin-left: 50px;
+	/*background-color: fuchsia;*/
+	margin-bottom:50px;
+}
+#contenido{
+	margin-left: 50px;
+	/*background-color: aqua;*/
+	margin-bottom: 50px;
+}
+footer{
+	margin-left: 50px;
+ 	text-transform: capitalize ;
+	/*background-color: green;*/
+}
+
+dl, ul{
+	margin-left:50px;
+	text-align:justify;
+}
+article{
+	margin: 20px 0px 20px 50px;
+}
+#art1{
+	padding-top:0px;
+	
+}
+dl, ul{
+	width: 300px;
+}
+
+
+dl, ul, h3, time{
+	position: relative;
+	left: 200px;
+	/*background-color: lime;*/
+}
+#seccionInfo>dl, #seccionInfo time, #informatica ul ul, footer time{
+	position: relative;
+	left: 0px;
+}
+li{
+	margin-left: -40px;
+	/*background-color: gray;*/
+}
+footer h2, #contenido h2{
+/*background-color: olive;*/
+text-indent: 100px;
+}

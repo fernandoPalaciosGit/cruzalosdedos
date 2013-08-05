@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px){
+	body
+	{
+		/*forzamos al body a que NO pueda expandirse
+		mas alla de 1200px (porque se veria un diseño muy distorsionado),
+		si lo hace, lo forzamos a que se centre*/
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	#bienvenida
+	{
+		display: block;
+		width: 25%;
+		float: right;
+		margin-right: 2%;
+		border-bottom: 1px solid grey;
+	}
+	#bienvenida h2
+	{
+		color: #434343;
+	}
+	#bienvenida #mensaje-registro,
+	#bienvenida #registro
+	{
+		text-align: center;
+	}
+	#bienvenida #mensaje-registro
+	{
+		font-size: 0.8em;
+	}
+	#bienvenida #registro
+	{
+		display: block;
+		color: white;
+		background-color: #22BCE0;
+		padding: 0.5em 0;
+	}
+	#contenido
+	{
+		width: 70%;
+	}
+
+}
