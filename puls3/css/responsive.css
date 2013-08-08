@@ -13,7 +13,6 @@
 		width: 25%;
 		float: right;
 		margin-right: 2%;
-		border-bottom: 5px solid grey;
 	}
 	#bienvenida h2
 	{
@@ -39,10 +38,55 @@
 		background-color: #22BCE0;
 		padding: 0.5em 0;
 	}
+	#bienvenida #actividad
+	{
+		background: #CC6666;
+		color: white;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.2em 0.5em;
+		text-align: center;
+		text-decoration: none;
+	}
 	#contenido
 	{
 		width: 70%;
 	}
+	#recent-post
+	{
+		border-top: 6px #aaa solid;
+		padding-top: 2em;
+	}
+	#recent-post .noticias
+	{
+		border-bottom: 1px #aaa solid;
+	}
+	#recent-post .noticias p
+	{
+		display: inline;
+	}
+	#recent-post .noticias .contador
+	{
+		background: #CC6666;
+		border-radius: 0.2em;
+		color: white;
+		float: left;
+		margin: 1em;
+		position: relative;
+		padding: 0.2em 0.5em;
+		text-decoration: none;
+	}
+	#recent-post .noticias .contador:after
+	{
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #CC6666;
+		content: "";
+		right: 5px;
+		position: absolute;
+		top:100%;
+	}
+
 }
 @media screen and (max-width: 480px){
 	header
